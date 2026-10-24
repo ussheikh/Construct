@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Construct | The Real Estate Development Intelligence Platform</title>
+<meta name="description" content="Construct turns fragmented project information into a structured, evidence-linked view of your development. Register your interest for a project assessment.">
+<meta property="og:title" content="Construct | The Real Estate Development Intelligence Platform">
+<meta property="og:description" content="Connecting data, capital and construction for real estate developers.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%23040F18%27/%3E%3Cpath d=%27M16 48V16l32 32V16%27 fill=%27none%27 stroke=%27%2312E8F5%27 stroke-width=%278%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
+<meta name="theme-color" content="#040F18">
+<style>
+@font-face{font-family:'Sora';font-style:normal;font-weight:400;font-display:swap;src:url(data:font/woff2;base64,d09GMgABAAAAADmEABAAAAAAfgAAADkiAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoMQG8ByHIY0BmA/U1RBVCoAhQQRCAqBjBDxNAuEQgABNgIkA4kABCAFg2wHil0MBxtJbbMREWwcAATWb4iRgWDjEIDIDCMR9oKTOkD2fzngxlDok6xXOIpqJHvHTDJCAy0cQs0llbq158zE9Sz0cQkf/YVjYftbj6e3wSEg+GhHWnb2N7wVWPkxXYAb7OCe7JbIGeCOasT1SPzT3PPOuZuX/AISKCDUFQbQMrhawP153m1/7nsPhMcDH8gKEXEjLjQFRDRzZa5ZtCy1MUltjGX1839t20KzOXU3lra0PpnZWDaWjT08uek/zVITFddCkC3sYx3s4zgOONYJCIjKVhDHjBnTrNU0u912rYzZ33QlTefS9qdjLghtskspTfd82GdiAoEgyAlQQh1VsOTZV+89skYZjMJGoZIK2QuExIiQFBIL/w8Y7Xa76EFpqoXa6d5XGlSCCytegFICy9gCcKEx98vL2v7Lci3HtayTv//l3skr/pdN/f/A8uzTWjJTiHDhwMhlAHXtavog9alSuw1RAfwP23bO80Nb1f9nqtnu7N6eiItYUQ6ZvJTpe+4vvR7Or/dz0e/MH8xiZjBAfreLFcWgxAXlMwDR7x0VMSClA3EphNJRMcApxurcyZVrq3LporLrNsXeRdtG+Kf2e7XZdyeKT8IykkCYb+WD0O4Nb+glKZHMVAHJKFkjgTWNb43T5eFxv1eb4wroaiOfa7x7NLgFQJW5zn030oYB/t2Smvcz2IuFleCKiJQgoadl73z//99kWP1ZpVtVLRUVMWLEiBgjRs/jFffz+uVveS9ZZJhwtp0iGyTYiX9W/4HqMDZd4B6RBhJSJYJ+3gRmMjA/yIUEbORIE8sggJozDGahZcBdijEhBJTY006o9ochM7HayBM3S5g9nEJbVTIRxUtPVhJzdieGww4RBUpKnLngRo03P/wFoaMjWNjVcL3hIhpIFEgMSHwJmbLIk9eOMDKFWVHdiLABU2LLkVJlc ordination)...) format('woff2')}
+:root{--bg:#040F18;--card-bg:#081A28;--accent:#12E8F5;--accent-glow:rgba(18,232,245,0.15);--text:#E6F4F1;--text-muted:#8AA2B2;--border:rgba(18,232,245,0.2)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Sora',sans-serif;line-height:1.6;padding:2rem 1rem;min-height:100vh;display:flex;justify-content:center;align-items:center}
+.container{max-width:900px;width:100%;margin:0 auto}
+header{text-align:center;margin-bottom:3rem}
+.logo{font-size:2.5rem;font-weight:800;letter-spacing:-1px;color:#fff;display:inline-flex;align-items:center;gap:0.5rem;margin-bottom:1rem}
+.logo span{color:var(--accent)}
+h1{font-size:1.25rem;font-weight:400;color:var(--text-muted);max-width:600px;margin:0 auto}
+.card{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:2.5rem;box-shadow:0 10px 30px rgba(0,0,0,0.5),0 0 20px var(--accent-glow);margin-bottom:2rem;backdrop-filter:blur(10px)}
+.badge{display:inline-block;background:rgba(18,232,245,0.1);color:var(--accent);border:1px solid var(--border);padding:0.25rem 0.75rem;border-radius:20px;font-size:0.8rem;font-weight:600;margin-bottom:1.5rem;text-transform:uppercase;letter-spacing:1px}
+form{display:flex;flex-direction:column;gap:1.25rem}
+.form-group{display:flex;flex-direction:column;gap:0.5rem}
+label{font-size:0.875rem;font-weight:600;color:var(--text)}
+input,select,textarea{background:rgba(4,15,24,0.6);border:1px solid var(--border);border-radius:8px;padding:0.875rem 1rem;color:#fff;font-family:inherit;font-size:1rem;transition:all 0.2s ease}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 10px var(--accent-glow)}
+button{background:var(--accent);color:var(--bg);border:none;border-radius:8px;padding:1rem;font-size:1rem;font-weight:700;cursor:pointer;transition:all 0.2s ease;margin-top:0.5rem}
+button:hover{transform:translateY(-2px);box-shadow:0 5px 15px var(--accent-glow)}
+footer{text-align:center;color:var(--text-muted);font-size:0.875rem;margin-top:2rem}
+footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="logo">CONSTRUCT<span>.</span></div>
+<h1>The Real Estate Development Intelligence Platform</h1>
+</header>
+<main class="card">
+<span class="badge">Project Assessment</span>
+<h2 style="font-size:1.75rem;margin-bottom:0.5rem;font-weight:700;">Register Your Interest</h2>
+<p style="color:var(--text-muted);margin-bottom:2rem;font-size:0.95rem;">Connect data, capital, and construction. Submit your details below to receive a structured capital readiness evaluation.</p>
+
+<form id="assessmentForm">
+  <div class="form-group">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" required placeholder="e.g. Sarah Jenkins">
+  </div>
+  <div class="form-group">
+    <label for="email">Work Email</label>
+    <input type="email" id="email" required placeholder="sarah@apexurban.com">
+  </div>
+  <div class="form-group">
+    <label for="company">Company / Entity</label>
+    <input type="text" id="company" required placeholder="e.g. Apex Urban Developments">
+  </div>
+  <div class="form-group">
+    <label for="role">Role / Title</label>
+    <input type="text" id="role" placeholder="e.g. Founder, CEO, Development Director">
+  </div>
+  <button type="submit">Submit for Assessment</button>
+</form>
+
+</main>
+<footer>
+<p>&copy; 2026 Construct Capital Partners. All rights reserved.</p>
+</footer>
+</div>
+
+<!-- Supabase SDK v2 -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+  const SUPABASE_URL = 'https://jkidiiqpecetvtewidld.supabase.co';
+  // Replace with your publishable anon key from Supabase > Settings > API
+  const SUPABASE_ANON_KEY = 'sb_publishable_kezM349tCkyWdncCT5Xguw_1dtYOIcW';
+
+  const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  document.getElementById('assessmentForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const submitBtn = e.target.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Submitting...';
+    submitBtn.disabled = true;
+
+    // Helper to safely get field value if the element exists
+    const getVal = (id) => {
+      const el = document.getElementById(id);
+      return el ? el.value.trim() : '';
+    };
+
+    // Payload mapped to your exact Supabase columns
+    const payload = {
+      full_name: getVal('fullName'),
+      work_email: getVal('email'),
+      company: getVal('company'),
+      role: getVal('role'),
+      project_stage: getVal('projectStage'),
+      interest: getVal('interest'),
+      project_name: getVal('projectName'),
+      notes: getVal('notes')
+    };
+
+    try {
+      const { data, error } = await supabaseClient
+        .from('signups')
+        .insert([payload]);
+
+      if (error) throw error;
+
+      alert('Thank you for registering your interest. Our team will review your details and reach out shortly.');
+      this.reset();
+    } catch (err) {
+      console.error('Submission error:', err.message);
+      alert('Error submitting registration: ' + err.message);
+    } finally {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    }
+  });
+</script>
+</body>
+</html>
